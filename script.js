@@ -1,4 +1,6 @@
-var a = 500;
+var sketch = function(processing) {
+  with(processing) {
+    var a = 500;
 var b = 500;
 var c = 500;
 var d = 500;
@@ -828,3 +830,7 @@ draw= function() {
 
 
 
+  }
+};
+var canvas = document.getElementById("canvas"); 
+var processingInstance = new Processing(canvas, sketch);
